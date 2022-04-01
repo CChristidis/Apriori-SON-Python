@@ -1,7 +1,7 @@
   # Prints the most and least frequently rated movie of 1993
   # Append this script into Apriori_Son.py script.
   
-def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
+def most_leastFrequentlyRatedMovie1993(frequentItemsetsDict):  # using UserBaskets.
 
     quintupleList = []  # list of 5-tuples
     df = ReadMovies('movies.csv')
@@ -28,4 +28,4 @@ def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
     print("Least common movie of 1993 is:", y)
     
 if __name__ == "__main__":
-  experimentsOnMovies(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
+  most_leastFrequentlyRatedMovie1993(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
