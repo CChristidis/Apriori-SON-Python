@@ -181,14 +181,14 @@ def SON(itemBaskets, chunkSize, minSupport, maxLength):
     return hashTable
 
 
-def createCSV(filepath, dictionary):  # creates CSVs from dictionary
+def createCSVFromDictionary(filepath, dictionary):  
     with open(filepath, 'w', newline='\n', encoding='utf-8') as f:
         writer = csv.writer(f)
         for key, value in dictionary.items():
             writer.writerow([key, value])
         f.close()
 
-def createCSV2(filepath, list):  # creates CSVs from list
+def createCSVFromList(filepath, list):
     with open(filepath, 'w', newline='\n', encoding='utf-8') as f:
         writer = csv.writer(f)
         writer.writerows(list)
