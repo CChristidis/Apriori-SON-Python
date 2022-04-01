@@ -1,5 +1,5 @@
   # Prints the genre of most and least common rated movie of 1993 
-
+  # Append this script into Apriori_Son.py script.
 def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
 
     quintupleList = []  # list of 5-tuples
