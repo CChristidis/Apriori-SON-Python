@@ -1,5 +1,6 @@
   # Prints the greatest and least number of registered ratings with users' id.
-
+  # Append this script into Apriori_Son.py script.
+  
 def experimentsOnUsers(frequentItemsetsDict):  # using MovieBaskets.
 
     quintupleList = []  # list of 5-tuples
