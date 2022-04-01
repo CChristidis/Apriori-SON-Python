@@ -1,4 +1,4 @@
-  # Most/least common rated movie of 1993
+  # Prints the most and least frequently rated movie of 1993
 
 def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
 
