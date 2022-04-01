@@ -1,5 +1,6 @@
   # Prints the first and last registered rating (day/year/time).
-
+  # Append this script into Apriori_Son.py script.
+  
 def first_lastRegisteredRatings(frequentItemsetsDict):  # using MovieBaskets.
 
     quintupleList = []  # list of 5-tuples
