@@ -1,5 +1,6 @@
   # Prints the highest and lowest rated movies
-
+  # Append this script into Apriori_Son.py script.
+  
 def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
 
     quintupleList = []  # list of 5-tuples
