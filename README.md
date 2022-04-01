@@ -1,1 +1,1 @@
-**Apriori** and **SON** algorithms implemented in python.
+**Apriori** and **SON** algorithms implemented in python
