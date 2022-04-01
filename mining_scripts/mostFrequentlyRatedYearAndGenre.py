@@ -1,5 +1,5 @@
   # Prints most-least frequently rated genre and year.
-
+  # Append this script into Apriori_Son.py script.
 
 def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
 
