@@ -1,7 +1,7 @@
   # Prints most-least frequently rated genre and year.
   # Append this script into Apriori_Son.py script.
 
-def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
+def mostFrequentlyRatedYearAndGenre(frequentItemsetsDict):  # using UserBaskets.
 
     quintupleList = []  # list of 5-tuples
     df = ReadMovies('movies.csv')
@@ -54,4 +54,4 @@ def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
 
 
 if __name__ == "__main__":
-    experimentsOnMovies(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
+    mostFrequentlyRatedYearAndGenre(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
