@@ -1,6 +1,6 @@
   # Prints the genre of most and least common rated movie of 1993 
   # Append this script into Apriori_Son.py script.
-def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
+def genreOfMost_LeastFrequentlyRatedMovie1993(frequentItemsetsDict):  # using UserBaskets.
 
     quintupleList = []  # list of 5-tuples
     df = ReadMovies('movies.csv')
@@ -29,4 +29,4 @@ def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
     print("Genre of least common movie of 1993 is:", b)
     
 if __name__ == "__main__":
-  experimentsOnMovies(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
+  genreOfMost_LeastFrequentlyRatedMovie1993(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
