@@ -49,4 +49,4 @@ def highest_lowestUserMeanRatings(frequentItemsetsDict):  # using MovieBaskets.
     print("Lowest ratings mean value is:", mn, "by user with id:",n )
 
 if __name__ == "__main__":
-  experimentsOnUsers(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
+  highest_lowestUserMeanRatings(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
