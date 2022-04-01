@@ -1,1 +1,1 @@
-# Python-Apriori-Frequent-Item-Counting-algorithm-
+**Apriori** and **SON** algorithms implemented in python.
