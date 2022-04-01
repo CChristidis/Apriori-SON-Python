@@ -52,4 +52,5 @@ def experimentsOnMovies(frequentItemsetsDict):  # using UserBaskets.
     print("Most common year of release amongst the quintuples is:", y)
 
 
-experimentsOnMovies(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
+if __name__ == "__main__":
+    experimentsOnMovies(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
