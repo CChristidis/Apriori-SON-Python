@@ -1,6 +1,6 @@
   # Prints the first and last registered rating (day/year/time).
 
-def experimentsOnUsers(frequentItemsetsDict):  # using MovieBaskets.
+def first_lastRegisteredRatings(frequentItemsetsDict):  # using MovieBaskets.
 
     quintupleList = []  # list of 5-tuples
     df = ReadRatings('ratings.csv')
@@ -82,4 +82,4 @@ def experimentsOnUsers(frequentItemsetsDict):  # using MovieBaskets.
     print("First ever registered rating happened on day:", u, "of year:", y, "at:", str(t)+":"+str(p)+":"+str(s),"by user with id:", n)
     
 if __name__ == "__main__":
-  experimentsOnUsers(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
+  first_lastRegisteredRatings(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
