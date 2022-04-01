@@ -1,7 +1,7 @@
   # Prints the greatest and least number of registered ratings with users' id.
   # Append this script into Apriori_Son.py script.
   
-def experimentsOnUsers(frequentItemsetsDict):  # using MovieBaskets.
+def most_leastRegisteredRatings(frequentItemsetsDict):  # using MovieBaskets.
 
     quintupleList = []  # list of 5-tuples
     df = ReadRatings('ratings.csv')
@@ -35,4 +35,4 @@ def experimentsOnUsers(frequentItemsetsDict):  # using MovieBaskets.
     print("Least registered ratings:", y, "by user with id:", n)
 
 if __name__ == "__main__":
-  experimentsOnUsers(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
+  most_leastRegisteredRatings(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
