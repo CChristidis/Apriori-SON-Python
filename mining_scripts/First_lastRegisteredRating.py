@@ -81,6 +81,11 @@ def first_lastRegisteredRatings(frequentItemsetsDict):  # using MovieBaskets.
 
     print("Latest registered rating happened on day:", h, "of year:", x, "at:", str(q)+":"+str(o)+":"+str(g),"by user with id:", z)
     print("First ever registered rating happened on day:", u, "of year:", y, "at:", str(t)+":"+str(p)+":"+str(s),"by user with id:", n)
-    
-if __name__ == "__main__":
+  
+  
+def main():
   first_lastRegisteredRatings(myAprioriHash(CreateMovieBaskets(ReadRatings('ratings.csv')), 480, 5))
+  
+if __name__ == "__main__":
+  main()
+  
