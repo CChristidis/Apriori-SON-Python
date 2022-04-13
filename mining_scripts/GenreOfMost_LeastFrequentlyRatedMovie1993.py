@@ -27,6 +27,11 @@ def genreOfMost_LeastFrequentlyRatedMovie1993(frequentItemsetsDict):  # using Us
 
     print("Genre of most common movie of 1993 is:", z)
     print("Genre of least common movie of 1993 is:", b)
-    
-if __name__ == "__main__":
+
+def main():
   genreOfMost_LeastFrequentlyRatedMovie1993(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
+  
+if __name__ == "__main__":
+  main()
+
+  
