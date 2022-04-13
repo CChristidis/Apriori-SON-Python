@@ -60,6 +60,7 @@ def highest_lowestRatedMovies(frequentItemsetsDict):  # using UserBaskets.
     print("Highest rated movie is:", r1,"with a mean value of ratings equal to:", x,"released in year:", z)
     print("Lowest rated movie is:", r2, "with a mean value of ratings equal to:", y,"released in year:", n)
 
-
-if __name__ == "__main__":
+def main():
   experimentsOnMovies(myAprioriHash(CreateUserBaskets(ReadRatings('ratings.csv')), 140, 5))
+if __name__ == "__main__":
+  main()
