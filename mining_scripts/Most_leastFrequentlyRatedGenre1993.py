@@ -15,7 +15,6 @@ def most_leastFrequentlyRatedGenre1993(frequentItemsetsDict):  # using UserBaske
     for i in quintupleList:
         for j in i:
             k = df.loc[j - 1, "genres"].split("|")
-            print(k)
             if df.loc[j - 1, "title"][-5:-1] == "1993":
                 for m in k:
                     if m not in hashTable:
